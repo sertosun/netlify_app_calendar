@@ -66,15 +66,10 @@ body {
   margin-left: 1rem;
 }
 
-.event_list li:before {
-  /* content: "-";
-  position: absolute;
-  left: 3px; */
-}
-
 .add_event_day {
   height: 34px;
   width: 100%;
+  border: none;
   border-bottom: 1px solid white;
   display: flex;
   align-items: center;
@@ -86,6 +81,15 @@ body {
   color: white;
   border: none;
   font-size: 16px;
+  width: 100%;
+}
+
+.add_event_day_field:focus {
+  outline: none;
+}
+
+.fa-circle-plus {
+  cursor: pointer;
 }
 
 /* -----------------RIGHT SIDE------------------ */
@@ -106,7 +110,8 @@ body {
   color: #737373;
 }
 
-.fa-solid:hover {
+.fa-caret-left:hover,
+.fa-caret-right:hover {
   color: black;
   cursor: pointer;
 }
