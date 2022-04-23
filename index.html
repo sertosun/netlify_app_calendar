@@ -16,13 +16,13 @@
       <div class="calendar">
         <div class="left_side">
           <div class="present_day">
-            <h1 class="calendar_left_side_day">22</h1>
-            <div class="calendar_left_side_day_of_week">Friday</div>
+            <h1 class="calendar_left_side_day" id="dayNmbResult">22</h1>
+            <div class="calendar_left_side_day_of_week" id="dayNameResult">Friday</div>
           </div>
           <div class="events">
             <div>Current Events:</div>
             <ul class="event_list">
-              <li>- There is not any events</li>
+              <li id="removed">-There is not any events</li>
             </ul>
           </div>
           <div class="add_event_day">
@@ -30,10 +30,10 @@
               type="text"
               class="add_event_day_field"
               name=""
-              id=""
+              id="inputText"
               placeholder="Create an Event"
             />
-            <i class="fa-solid fa-circle-plus"></i>
+           <i class="fa-solid fa-circle-plus" onclick="addEvent()"></i>
           </div>
         </div>
 
@@ -50,7 +50,7 @@
               <li>Jan</li>
               <li>Feb</li>
               <li>Mar</li>
-              <li>Apr</li>
+              <li><span class="active">Apr</span></li>
               <li>May</li>
               <li>Jun</li>
               <li>Jul</li>
@@ -62,60 +62,66 @@
             </ul>
           </div>
 
-          <div class="calendar_week_list">
-            <ul class="calendar_week">
-              <li>SUN</li>
-              <li>MON</li>
-              <li>TUE</li>             
-              <li>WED</li>
-              <li>THU</li>
-              <li>FRI</li>
-              <li>SAT</li>
-            </ul>
+          <div class="table_container">
+            <table>
+
+          <tr class="calendar_week">
+           
+              <th>SUN</th>
+              <th>MON</th>
+              <th>TUE</th>            
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+            
+          </tr>
+          <!-- <div class="calendar_day_list"> -->
+            <tr class="calendar_days">
+              <td class="sunday" id="day">27</td>
+              <td class="monday" id="day">28</td>
+              <td class="tuesday" id="day">29</td>
+              <td class="wednesday" id="day">30</td>
+              <td class="thursday" id="day">31</td>
+              <td class="friday" id="day">1</td>
+              <td class="saturday" id="day">2</td>
+              <td class="sunday" id="day">3</td>
+              <td class="monday" id="day">4</td>
+              <td class="tuesday" id="day">5</td>
+              <td class="wednesday" id="day">6</td>
+              <td class="thursday" id="day">7</td>
+              <td class="friday" id="day">8</td>
+              <td class="saturday" id="day">9</td>
+              <td class="sunday" id="day">10</td>
+              <td class="monday" id="day">11</td>
+              <td class="tuesday" id="day">12</td>
+              <td class="wednesday" id="day">13</td>
+              <td class="thursday" id="day">14</td>
+              <td class="friday" id="day">15</td>
+              <td class="saturday" id="day">16</td>
+              <td class="sunday" id="day">17</td>
+              <td class="monday" id="day">18</td>
+              <td class="tuesday" id="day">19</td>
+              <td class="wednesday" id="day">20</td>
+              <td class="thursday" id="day">21</td>
+              <td class="friday" id="day">22</td>
+              <td class="saturday" id="day">23</td>
+              <td class="sunday" id="day">24</td>
+              <td class="monday" id="day">25</td>
+              <td class="tuesday" id="day">26</td>
+              <td class="wednesday" id="day">27</td>
+              <td class="thursday" id="day">28</td>
+              <td class="friday" id="day">29</td>
+              <td class="saturday" id="day">30</td>
+              <td class="sunday" id="day">1</td>
+              <td class="monday" id="day">2</td>
+            </tr>
           </div>
-          <div class="calendar_day_list">
-            <ul class="calendar_days">
-              <li class="another_month">27</li>
-              <li class="another_month">28</li>
-              <li class="another_month">29</li>
-              <li class="another_month">30</li>
-              <li class="another_month">31</li>
-              <li class="another_month">1</li>
-              <li class="another_month">2</li>
-              <li class="another_month">3</li>
-              <li class="another_month">4</li>
-              <li class="another_month">5</li>
-              <li class="another_month">6</li>
-              <li class="another_month">7</li>
-              <li class="another_month">8</li>
-              <li class="another_month">9</li>
-              <li class="another_month">10</li>
-              <li class="another_month">11</li>
-              <li class="another_month">12</li>
-              <li class="another_month">13</li>
-              <li class="another_month">14</li>
-              <li class="another_month">15</li>
-              <li class="another_month">16</li>
-              <li class="another_month">17</li>
-              <li class="another_month">18</li>
-              <li class="another_month">19</li>
-              <li class="another_month">20</li>
-              <li class="another_month">21</li>
-              <li class="another_month today">22</li>
-              <li class="another_month">23</li>
-              <li class="another_month">24</li>
-              <li class="another_month">25</li>
-              <li class="another_month">26</li>
-              <li class="another_month">27</li>
-              <li class="another_month">28</li>
-              <li class="another_month">29</li>
-              <li class="another_month">30</li>
-              <li class="another_month">1</li>
-              <li class="another_month">2</li>
-            </ul>
-          </div>
+        </table>
+        </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
